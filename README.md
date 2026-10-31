@@ -31,4 +31,4 @@ python -m pip install -r requirements.txt
 streamlit run app.py
 ```
 
-для публикации в Streamlit Community Cloud выберите репозиторий, нужную ветку и файл `app.py`.
+для публикации в Streamlit Community Cloud (https://share.streamlit.io/) выберите репозиторий, нужную ветку и файл `app.py`.
