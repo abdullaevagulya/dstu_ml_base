@@ -52,6 +52,7 @@ def check_data(data, features):
             raise ValueError("для города и типа дома можно выбрать не больше одного признака")
     return X
 
+############### интерфейс
 
 st.set_page_config(page_title="Оценка квартиры", page_icon="🏠")
 st.title("Оценка стоимости квартиры")
@@ -108,6 +109,8 @@ with st.expander("Какие поля нужны в файле"):
         "Тип дома: выберите не больше одного признака. Для базового типа все равны 0."
     )
     st.caption("Лишние столбцы, включая цену и правильный класс, игнорируются.")
+
+    
 uploaded = st.file_uploader("Файл с параметрами квартир", type=["csv", "xlsx"])
 
 if uploaded is not None:
